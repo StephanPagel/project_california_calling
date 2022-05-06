@@ -1,3 +1,60 @@
 @import '_variables.scss';
 @import '_generals.scss';
 @import '_mixins.scss';
+
+header {
+
+    background-color: $co_1;
+    color: $co_2;
+    text-align: center;
+
+    article {
+        display: flex;
+
+        div {
+            display: inline;
+            height: 25vh;
+            width: 50%;
+        }
+
+        div:nth-of-type(1) {
+            border-right: 2px solid grey;
+        }
+    }
+
+    h3:nth-of-type(1) {
+        margin-top: 3%;
+    }
+
+    h1 {
+        width: 50%;
+        margin: 2% auto;
+        line-height: .7;
+
+        span {
+            color: black;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $co_2;
+        }
+    }
+
+    h3:nth-of-type(2) {
+        margin-bottom: 10%;
+    }
+
+    .bear {
+        width: 83%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            font-family: $ff_2;
+            font-size: 2rem;
+            color: $co_2;
+            text-decoration: none;
+            border: 2px solid grey;
+            padding: 20px 50px;
+        }
+    }
+}
