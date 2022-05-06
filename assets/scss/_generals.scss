@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px dotted red;
+    border: .1px dotted red;
 }
 
 html {
@@ -17,6 +17,7 @@ html {
 }
 
 h1 {
+    font-family: $ff_1;
     font-size: 10rem;
 }
 

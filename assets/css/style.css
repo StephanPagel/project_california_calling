@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px dotted red;
+  border: 0.1px dotted red;
 }
 
 html {
@@ -15,6 +15,7 @@ html {
 }
 
 h1 {
+  font-family: "Larish Neue, sans-serif";
   font-size: 10rem;
 }
 
@@ -46,7 +47,7 @@ header h3:nth-of-type(1) {
 header h1 {
   width: 50%;
   margin: 2% auto;
-  line-height: 0.7;
+  line-height: 0.8;
 }
 header h1 span {
   color: black;
@@ -69,6 +70,103 @@ header .bear a {
   text-decoration: none;
   border: 2px solid grey;
   padding: 20px 50px;
+}
+
+.last_year {
+  background-color: black;
+  background-image: url(../img/map.svg);
+  background-size: 39%;
+  background-repeat: no-repeat;
+  background-position: 100% 86%;
+}
+.last_year p {
+  margin: 0 8.5%;
+  color: white;
+}
+.last_year p:nth-of-type(odd) {
+  font-size: 10rem;
+  font-weight: 500;
+  font-family: "Larish Neue, sans-serif";
+}
+.last_year p:nth-of-type(1) {
+  margin-top: 13%;
+  margin-bottom: 10%;
+}
+.last_year p:nth-of-type(even) {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.last_year p:nth-of-type(7) {
+  margin-bottom: 12%;
+}
+
+.stuck {
+  position: relative;
+}
+.stuck img:nth-of-type(1) {
+  position: absolute;
+  width: 25%;
+  top: -4%;
+  right: 8%;
+}
+.stuck img:nth-of-type(2) {
+  position: absolute;
+  width: 21.5%;
+  top: 15%;
+  left: 4%;
+}
+.stuck div {
+  width: 37%;
+  margin: 33% 0 51% 33%;
+}
+.stuck div h1 {
+  font-size: 9.5rem;
+  line-height: 0.9;
+}
+.stuck div p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2;
+  margin-top: 2%;
+}
+.stuck img:nth-of-type(3) {
+  position: absolute;
+  width: 21.5%;
+  top: 35%;
+  right: 0%;
+}
+.stuck img:nth-of-type(4) {
+  position: absolute;
+  width: 25%;
+  top: 46.5%;
+  left: 17%;
+}
+.stuck img:nth-of-type(5) {
+  position: absolute;
+  width: 25%;
+  top: 56%;
+  right: 12%;
+}
+.stuck img:nth-of-type(6) {
+  position: absolute;
+  width: 21.5%;
+  top: 72%;
+  left: 0%;
+}
+.stuck > p {
+  width: 38%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2;
+  margin: 0 0 24% 33%;
+}
+.stuck img:nth-of-type(7) {
+  position: absolute;
+  width: 34%;
+  top: 87%;
+  right: 21%;
 }
 
 /*# sourceMappingURL=style.css.map */
