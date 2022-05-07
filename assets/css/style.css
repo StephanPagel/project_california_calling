@@ -17,6 +17,7 @@ html {
 h1 {
   font-family: "Larish Neue, sans-serif";
   font-size: 10rem;
+  line-height: 0.9;
 }
 
 h3 {
@@ -165,8 +166,57 @@ header .bear a {
 .stuck img:nth-of-type(7) {
   position: absolute;
   width: 34%;
-  top: 87%;
+  top: 88%;
   right: 21%;
+  z-index: 1;
+}
+
+.golden {
+  color: white;
+  background-color: black;
+  position: relative;
+}
+.golden article {
+  width: 80%;
+  margin: 10% auto 58% auto;
+  display: flex;
+  justify-content: space-between;
+}
+.golden article div:nth-of-type(1) {
+  width: 30%;
+}
+.golden article div:nth-of-type(1) p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 2%;
+}
+.golden article div:nth-of-type(2) {
+  width: 51%;
+}
+.golden article p:nth-of-type(1) {
+  font-family: "Larish Neue, sans-serif";
+  font-size: 3rem;
+  margin: 17% 0 4% 0;
+}
+.golden article p:nth-of-type(2) {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+}
+.golden > div {
+  width: 80%;
+  margin-left: 9%;
+  position: relative;
+  position: absolute;
+  bottom: -13%;
+}
+.golden > div img:nth-of-type(1) {
+  width: 70%;
+}
+.golden > div img:nth-of-type(2) {
+  width: 35%;
+  position: absolute;
+  top: 22%;
+  right: 2%;
 }
 
 /*# sourceMappingURL=style.css.map */
