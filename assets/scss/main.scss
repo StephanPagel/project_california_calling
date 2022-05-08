@@ -279,7 +279,6 @@ header {
 
     >div {
         width: 80%;
-        // margin-left: 10%;
         margin: 0 0 64% 10%;
         position: relative;
 
@@ -294,6 +293,78 @@ header {
             position: absolute;
             top: 13vw;
             left: 2%;
+        }
+    }
+}
+
+.join {
+    background-color: $co_1;
+    color: $co_2;
+
+    div {
+        margin: 10% 0 10% 10%;
+
+        p:nth-of-type(1) {
+            font-family: $ff_2;
+            font-size: 1.8rem;
+        }
+
+        p:nth-of-type(2) {
+            font-family: $ff_1;
+            font-size: 3.5rem;
+            width: 40%;
+            margin: 3% 0 4% 0;
+        }
+
+        a {
+            font-family: $ff_2;
+            font-size: 2rem;
+            color: $co_2;
+            text-decoration: none;
+            border: 2px solid grey;
+            padding: 20px 50px;
+        }
+    }
+}
+
+footer {
+    background-color: $co_1;
+    color: $co_2;
+    display: flex;
+    justify-content: space-between;
+
+    article {
+        width: 17%;
+        margin: 0 0 0 10%;
+
+        div img {
+            width: 10%;
+        }
+
+        img:nth-of-type(2) {
+            margin: 0 1%;
+        }
+
+        p {
+            font-family: $ff_2;
+            font-size: 1.8rem;
+        }
+
+        p:nth-of-type(1) {
+            margin: 7% 0;
+        }
+
+        p:nth-of-type(2) {
+            margin-bottom: 17%;
+        }
+    }
+
+    >div {
+        width: 20%;
+        margin-right: 13%;
+
+        img {
+            width: 25%;
         }
     }
 }
