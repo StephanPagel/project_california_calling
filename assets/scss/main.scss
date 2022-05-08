@@ -34,7 +34,7 @@ header {
         line-height: .8;
 
         span {
-            color: black;
+            color: $co_1;
             -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: $co_2;
         }
@@ -57,6 +57,11 @@ header {
             text-decoration: none;
             border: 2px solid grey;
             padding: 20px 50px;
+        }
+
+        a:hover {
+            color: $co_1;
+            background-color: $co_2;
         }
     }
 }
@@ -243,10 +248,31 @@ header {
 .poppy {
     color: $co_1;
     background-color: $co_2;
+    position: relative;
+    overflow: hidden;
+
+    >img {
+        width: 30%;
+        position: absolute;
+        top: -7%;
+        right: -12%;
+
+        animation: rotation 20s linear infinite;
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
 
     article {
         width: 80%;
-        margin: 29% auto 13% auto;
+        margin: 27% auto 13% auto;
         display: flex;
         justify-content: space-between;
 
@@ -300,6 +326,53 @@ header {
 .join {
     background-color: $co_1;
     color: $co_2;
+    position: relative;
+    overflow: hidden;
+
+    .banner {
+        font-family: $ff_2;
+        background: $co_2;
+        position: absolute;
+        top: 0%;
+        left: auto;
+        right: -25%;
+        text-align: center;
+        height: 18vh;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        overflow: hidden;
+
+        .text {
+            font-size: 11rem;
+            color: $co_1;
+            font-family: $ff_1;
+            animation: banner 20s linear infinite;
+
+            @keyframes banner {
+                0% {
+                    transform: translatex(20%);
+                }
+
+                50% {
+                    transform: translatex(100%);
+                }
+
+                100% {
+                    transform: translatex(20%);
+                }
+            }
+
+            span {
+                color: $co_2;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $co_1;
+            }
+        }
+
+    }
+
+
+
 
     div {
         margin: 10% 0 10% 10%;
@@ -324,6 +397,12 @@ header {
             border: 2px solid grey;
             padding: 20px 50px;
         }
+
+        a:hover {
+            color: $co_1;
+            background-color: $co_2;
+        }
+
     }
 }
 
@@ -355,7 +434,7 @@ footer {
         }
 
         p:nth-of-type(2) {
-            margin-bottom: 17%;
+            margin-bottom: 23%;
         }
     }
 

@@ -72,6 +72,10 @@ header .bear a {
   border: 2px solid grey;
   padding: 20px 50px;
 }
+header .bear a:hover {
+  color: black;
+  background-color: white;
+}
 
 .last_year {
   background-color: black;
@@ -223,10 +227,27 @@ header .bear a {
 .poppy {
   color: black;
   background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+.poppy > img {
+  width: 30%;
+  position: absolute;
+  top: -7%;
+  right: -12%;
+  animation: rotation 20s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .poppy article {
   width: 80%;
-  margin: 29% auto 13% auto;
+  margin: 27% auto 13% auto;
   display: flex;
   justify-content: space-between;
 }
@@ -270,6 +291,43 @@ header .bear a {
 .join {
   background-color: black;
   color: white;
+  position: relative;
+  overflow: hidden;
+}
+.join .banner {
+  font-family: "Work Sans", sans-serif;
+  background: white;
+  position: absolute;
+  top: 0%;
+  left: auto;
+  right: -25%;
+  text-align: center;
+  height: 18vh;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  overflow: hidden;
+}
+.join .banner .text {
+  font-size: 11rem;
+  color: black;
+  font-family: "Larish Neue, sans-serif";
+  animation: banner 20s linear infinite;
+}
+@keyframes banner {
+  0% {
+    transform: translatex(20%);
+  }
+  50% {
+    transform: translatex(100%);
+  }
+  100% {
+    transform: translatex(20%);
+  }
+}
+.join .banner .text span {
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 .join div {
   margin: 10% 0 10% 10%;
@@ -291,6 +349,10 @@ header .bear a {
   text-decoration: none;
   border: 2px solid grey;
   padding: 20px 50px;
+}
+.join div a:hover {
+  color: black;
+  background-color: white;
 }
 
 footer {
@@ -317,7 +379,7 @@ footer article p:nth-of-type(1) {
   margin: 7% 0;
 }
 footer article p:nth-of-type(2) {
-  margin-bottom: 17%;
+  margin-bottom: 23%;
 }
 footer > div {
   width: 20%;
